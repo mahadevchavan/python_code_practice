@@ -1,0 +1,134 @@
+Assignments on function:
+# Following assignments involve multiple tasks
+# It is expected you create seperate functions for each task 
+# and then use them to achieve complete solution!
+
+1. Write function which takes two parameters account no and name of the user.
+Check if the account number is valid. Account no is valid only if it is a 4 digit number less than 5000
+Check if the name is valid. Name is valid if all characters are alphabets and no numbers or special chars in the name
+If both name and 'acc no' are valid return True 
+If acc no is invalid return a message string saying “Account no is invalid”
+if name is invalid return None
+
+
+2. WA function to calculate total salary given that
+1. post      2. basic salary
+rules:
+post can be manager or employee
+total sal = basic + TA + HRA
+TA = 5000 for 'manager' 
+and TA = 10,000 for 'employee'
+HRA = 20,000 for 'manager' and HRA = 12,000 for 'employee'
+
+return total salary based on two parameters
+
+
+3.  WA function to rotate given string by 2 position to right
+
+Ex.
+s1=”IACSD”
+Rotate by 2 place to right
+“SDIAC”
+
+4.  Generalize above function to rotate string to right by n
+
+5.  Generalize above function to rotate string by n to right or left
+
+6. WAP to count number of passengers in every airline. Here we are given dictionary of passanger id and airline id
+Ex
+input_dir ={'p1':'a1','p2':'a10','p89':'a1','p5':'a10'}
+output: {'a1':2, 'a10':2}
+
+7. given a list of strings.
+every string is in format "Emp_name:Emp_id"
+Emp_id is always a number
+if emp_id is amstrong number then rotate emp_name 1 place to the right --> and print the emp_name
+if emp_id is a prime no then print vowels from the employee name
+in other cases print consonents from the emp name
+Finally there should be print of every employee name as per given condition
+
+8. Write a function which takes all details of a person as input in sequence and prints details as follows
+(Hint: Think which type of parameter to be used for every option)
+a. Take name and Print it in Camel Case
+b. Take 10 digit Mobile No and print it appending +91
+c. Take location as optional value. If not given then print India
+d. Take Qualifications. Qualifications can be 1 or 2 or many.
+Print all the passed qualifications one by one. Default qualification is "Human"
+
+9. Create a function "cloth_details" with three arguments, color, shape and size. All three are optional and can be passed in any sequence by the user.
+
+10. Create a calculator.py file 
+Create add(), subtract(), multiply(), divide(), power(), log() functions
+Create a menu driven program to take values and operation as input from user and print result using these functions
+
+Take ONLY integer inputs from user. If its not an integer then give Error message -> "WRONG Input: Please enter ONLY integer value"
+Your program should not give "ValueError" while using int() function for any input from below, It should display YOUR error message
+Enter a number : 10
+Enter a number : 10.9
+Enter a number : ABC
+(Hint: Think about methods from string data type to check input as integer)
+
+11. Write a function which finds average of given arguments. Minimum it takes two parameters and maximum it can take any number of arguments.
+Finally it should return average of all arguments passed
+
+Ex. avg(10,12)  return value 11
+avg(3,4,5)  return value 4
+avg(1,2,3,4,5,6,7,8,9,10) return value 5.5
+Extra case 
+avg(1,2,avg(4,5,6)) return value 2.667 (roughly 8/3)
+
+
+Advanced Questions
+Q. what is output of following program? Explain
+def def_arg(l1=[]):
+	l1.append(234)
+	print(l1)
+
+def_arg()
+def_arg([10,20,30])
+def_arg()
+
+Q. Explain how recurssion works in any recurssive function.
+Eplain why it is not used in industry?
+
+Q. In Question 10, allow user to give integer or float values as input. 
+Write your own function to verify that given input is integer or float or something else.
+If its not an integer or float then give Error message -> "WRONG Input: Please enter ONLY integer or float value"
+Your program should not give "ValueError" while using float() or int() function for any input from below, It should display YOUR error message
+Enter a number : 10
+Enter a number : 10.9
+Enter a number : ABC
+
+Q. Write a function general_add() 
+It takes only 2 parameters.
+Data type of passed argument can be int , string , list
+If both are int or float then return simple addition
+If both are string then return concated string
+If both are list then return concated list
+
+If one string one int then return concated value of string and int
+Ex. general_add(10,'ss') return ss10 
+general_add('ss',10 ) return ss10 
+
+If one list and one int then return new list with appended int (don't modify original list)
+
+Ex. 
+list1=[10,20,30]
+general_add(list1,45) return [10,20,30,45]  But print(l1) will give [10,20,30]
+
+same output general_add(45,list1)
+
+
+If one is list and one string then return updated list which will have all chracters from string appended at the end
+Ex. 
+list1=[10,20,30]
+general_add(list1,'ABC')  return modified list1  print(list1) will give [10,20,30,'A','B','C']
+
+same output if general_add('ABC',list1)
+
+
+
+
+
+
+
